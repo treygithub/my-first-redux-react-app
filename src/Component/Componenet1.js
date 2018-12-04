@@ -41,6 +41,7 @@ clearAll(){
 
 
 render(){
+    const {userName,password,id} = this.state
     return(
         <div>
             <Component2 />
@@ -48,15 +49,15 @@ render(){
                 <div className="row">
                     <div className="col-sm-4">
                     <h3>name</h3>
-                    <input value={this.state.userName}  placeholder="enter screen name" type="text" onChange={e =>this.inputChangeN(e.target.value)}/>
+                    <input value={userName}  placeholder="enter screen name" type="text" onChange={e =>this.inputChangeN(e.target.value)}/>
                     </div>
                     <div className="col-sm-4">
                     <h3>password</h3>
-                    <input value={this.state.password} placeholder="enter password" type="text" onChange={e =>this.inputChangeP(e.target.value)}/>
+                    <input value={password} placeholder="enter password" type="text" onChange={e =>this.inputChangeP(e.target.value)}/>
                     </div>
                     <div className="col-sm-4">
                     <h3>id</h3>
-                    <input value={this.state.id} placeholder="enter id" type="text" onChange={e =>this.inputChangeI(e.target.value)}/>
+                    <input value={id} placeholder="enter id" type="text" onChange={e =>this.inputChangeI(e.target.value)}/>
                     </div>
                     
                     <div className="container">
